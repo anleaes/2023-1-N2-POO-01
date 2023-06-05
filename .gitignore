@@ -2,7 +2,7 @@
 vacina_app/__pycache__
 db.sqlite3
 .env
-
+env
 
 ##### CLASSES #####
 # Vacinas

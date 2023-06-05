@@ -26,12 +26,12 @@ env
 /apps/vaccinesSupplier/migrations/*
 
 # AgendamentoVacina
-/apps/vaccines/__pycache__/*
-/apps/vaccines/migrations/*
-
-# VacinaPaciente
 /apps/vaccineScheduling/__pycache__/*
 /apps/vaccineScheduling/migrations/*
+
+# VacinaPaciente
+/apps/pacientVacines/__pycache__/*
+/apps/pacientVacines/migrations/*
 
 # Funcionario
 /apps/employee/__pycache__/*

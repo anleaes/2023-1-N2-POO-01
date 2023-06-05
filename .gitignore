@@ -1,5 +1,43 @@
-/vacina_app/__pycache__
-/vacina_app/apps/categories/__pycache__/*
-/vacina_app/apps/categories/migrations/*
+# Raiz
+vacina_app/__pycache__
 db.sqlite3
 .env
+
+
+##### CLASSES #####
+# Vacinas
+/apps/vaccines/__pycache__/*
+/apps/vaccines/migrations/*
+
+# Campanhas
+/apps/campaings/__pycache__/*
+/apps/campaings/migrations/*
+
+# Paciente
+/apps/pacient/__pycache__/*
+/apps/pacient/migrations/*
+
+# LocalVacinação
+/apps/vacinationLocal/__pycache__/*
+/apps/vacinationLocal/migrations/*
+
+# FornecedorVacina
+/apps/vaccinesSupplier/__pycache__/*
+/apps/vaccinesSupplier/migrations/*
+
+# AgendamentoVacina
+/apps/vaccines/__pycache__/*
+/apps/vaccines/migrations/*
+
+# VacinaPaciente
+/apps/vaccineScheduling/__pycache__/*
+/apps/vaccineScheduling/migrations/*
+
+# Funcionario
+/apps/employee/__pycache__/*
+/apps/employee/migrations/*
+
+# EstoqueLocal
+/apps/localStorage/__pycache__/*
+/apps/localStorage/migrations/*
+##### FIM CLASSES #####

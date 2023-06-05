@@ -1,0 +1,8 @@
+SECRET_KEY=django-insecure-g)^il6!vqm7j1c0y58&#3rwcu@5cp_@hl)f1t1iu#p++d^0**7
+DEBUG=true
+
+DB_NAME=vacinadb
+DB_USER=vacinauser
+DB_PASSWORD=123456
+DB_HOST=localhost
+DB_PORT=5432

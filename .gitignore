@@ -1,0 +1,5 @@
+/vacina_app/__pycache__
+/vacina_app/apps/categories/__pycache__/*
+/vacina_app/apps/categories/migrations/*
+db.sqlite3
+.env

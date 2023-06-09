@@ -16,5 +16,10 @@ class Vacina:
         self._fabricada_em = fabricada_em
         self._validade = validade
         self._fornecedor = fornecedor  
-        .
+        
+     def adicionar_vacina(vacinas, id, nome_vacina, tipo_vacina,doses_necessarias, forma_armazenamento, temperatura, intervalo_entre_doses, numero_lote, fabricada_em, validade, fornecedor):
+      
+        nova_vacina = Vacina(id, nome_vacina, tipo_vacina, doses_necessarias, forma_armazenamento, temperatura, intervalo_entre_doses, numero_lote, fabricada_em, validade, fornecedor)
+        vacinas.append(nova_vacina)
+        print("Vacina adicionada com sucesso!")
 

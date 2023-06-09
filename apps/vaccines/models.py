@@ -16,4 +16,5 @@ class Vacina:
         self._fabricada_em = fabricada_em
         self._validade = validade
         self._fornecedor = fornecedor  
+        .
 

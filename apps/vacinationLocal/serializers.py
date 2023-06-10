@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import LocalVacina
+from .models import vacinationLocal
 
-class LocalVacinaSerializer(serializers.ModelSerializer):
+class vacinationLocalSerializer(serializers.ModelSerializer):
     class Meta:
-        model = LocalVacina
+        model = vacinationLocal
         fields = ('nome', 'endereco')

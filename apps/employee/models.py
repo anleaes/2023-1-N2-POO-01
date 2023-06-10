@@ -7,7 +7,6 @@ class Employee(models.Model):
     idade = models.IntegerField()
     funcao = models.CharField(max_length=100)
     formacao = models.CharField(max_length=100)
-    local = models.ForeignKey(vacinationLocal, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.nome_completo

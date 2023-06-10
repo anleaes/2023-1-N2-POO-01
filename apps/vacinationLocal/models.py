@@ -1,6 +1,6 @@
 from django.db import models
 
-class vacinationLocal:
+class VacinationLocal:
     def __init__(self, nome, endereco):
         self.nome = nome
         self.endereco = endereco

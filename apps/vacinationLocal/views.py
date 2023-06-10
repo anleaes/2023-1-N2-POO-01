@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from rest_framework import viewsets
 from .models import VacinationLocal
-from .serializers import VacinationLocalSerializer
+from .serializers import vacinationLocalSerializer
 
-class VacinationLocalViewSet(viewsets.ModelViewSet):
-    queryset = VacinationLocal.objects.all()
-    serializer_class = VacinationLocalSerializer
+class vacinationLocalViewSet(viewsets.ModelViewSet):
+    queryset = vacinationLocal.objects.all()
+    serializer_class = vacinationLocalSerializer

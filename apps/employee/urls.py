@@ -1,14 +1,14 @@
 from django.urls import path, include
+from . import views
 from rest_framework import routers
-from .views import EmployeeViewSet
 
+app_name = 'employee'
 
 router = routers.DefaultRouter()
-router.register(r'employee', EmployeeViewSet)
+router.register('funcionarios', views.EmployeViewSet, basename='funcionarios')
 
 urlpatterns = [
-    # Outras rotas da sua aplicação
-    path('api/', include(router.urls)),
-    path('funcionarios/', include('employee.urls', namespace='employee')),
+    path('', include(router.urls) )
 ]
+
 

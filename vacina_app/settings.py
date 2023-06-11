@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'employee.apps.EmployeeConfig',
+    'pacientVacines.apps.PacientvacinesConfig'
 ]
 
 MIDDLEWARE = [

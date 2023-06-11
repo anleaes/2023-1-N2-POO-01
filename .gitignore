@@ -26,8 +26,8 @@ env
 /apps/vacinationLocal/migrations/*
 
 # FornecedorVacina
-/apps/vaccinesSupplier/__pycache__/*
-/apps/vaccinesSupplier/migrations/*
+/apps/vaccineSupplier/__pycache__/*
+/apps/vaccineSupplier/migrations/*
 
 # AgendamentoVacina
 /apps/vaccineScheduling/__pycache__/*

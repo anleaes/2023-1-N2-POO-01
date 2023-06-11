@@ -5,4 +5,4 @@ from .serializers import vacinationLocalSerializer
 
 class VacinationLocalViewSet(viewsets.ModelViewSet):
     queryset = VacinationLocal.objects.all()
-    serializer_class = VacinationLocalSerializer
+    serializer_class = vacinationLocalSerializer

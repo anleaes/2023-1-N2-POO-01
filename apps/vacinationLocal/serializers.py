@@ -3,5 +3,5 @@ from .models import vacinationLocal
 
 class vacinationLocalSerializer(serializers.ModelSerializer):
     class Meta:
-        model = vacinationLocal
+        model = VacinationLocal
         fields = ('nome', 'endereco')

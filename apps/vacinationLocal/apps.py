@@ -1,7 +1,6 @@
 from django.apps import AppConfig
 
-
-class vacinationLocalConfig(AppConfig):
+class VacinationLocalConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'vacinationLocal'
+    name = 'VacinationLocal'
     verbose_name = 'Local Vacina'

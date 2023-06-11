@@ -1,3 +1,8 @@
 from django.shortcuts import render
+from .models import vaccinescheduling
+from rest_framework import viewsets
+from .serializer import vaccineschedulingSerializer
 
-# Create your views here.
+class vaccineschedulingViewSet(viewsets.ModelViewSet):
+    queryset = vaccinescheduling.objects.all()
+    serializer_class = vaccineschedulingSerializer

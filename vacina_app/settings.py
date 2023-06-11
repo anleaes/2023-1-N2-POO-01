@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'employee.apps.EmployeeConfig',
     'pacientVacines.apps.PacientvacinesConfig'
+    'vaccines.apps.VaccinesConfig'
 ]
 
 MIDDLEWARE = [

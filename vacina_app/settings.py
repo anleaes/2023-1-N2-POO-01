@@ -48,10 +48,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'employee.apps.EmployeeConfig',
-    'pacientVacines.apps.PacientvacinesConfig'
-    'vaccines.apps.VaccinesConfig'
-    'vaccineScheduling.apps.VaccineschedulingConfig'
-    'vaccineSupplier.apps.VaccinesupplierConfig'
+    'pacientVacines.apps.PacientvacinesConfig',
+    'vaccines.apps.VaccinesConfig',
+    'vaccineScheduling.apps.VaccineschedulingConfig',
+    'vaccineSupplier.apps.VaccinesupplierConfig',
+    'vacinationLocal.apps.VacinationLocalConfig',
 ]
 
 MIDDLEWARE = [

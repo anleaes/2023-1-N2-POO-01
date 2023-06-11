@@ -1,6 +1,5 @@
 from django.db import models
-from vaccines.models import Vacina
-from vaccinesSupplier.models import FornecedorVacina
+from vaccineSupplier.models import FornecedorVacina
 from datetime import date
 
 class Vacina(models.Model):

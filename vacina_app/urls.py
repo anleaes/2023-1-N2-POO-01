@@ -7,4 +7,3 @@ urlpatterns = [
     path('vacinationLocal/', include('vacinationLocal.urls', namespace='vacinationLocal')),
     path('localVacina/', include('localVacina.urls', namespace='localVacina')),
 ]
-

@@ -4,3 +4,6 @@ from rest_framework import viewsets
 from .serializers import localStorageSerializer
 
 # Create your views here.
+class localStorageViewSet(viewsets.ModelViewSet):
+    queryset = localStorage.objects.all()
+    serializer_class = localStorageSerializer

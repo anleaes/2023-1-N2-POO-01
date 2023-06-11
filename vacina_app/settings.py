@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'employee.apps.EmployeeConfig',
     'pacientVacines.apps.PacientvacinesConfig'
     'vaccines.apps.VaccinesConfig'
+    'vaccineScheduling.apps.VaccineschedulingConfig'
 ]
 
 MIDDLEWARE = [

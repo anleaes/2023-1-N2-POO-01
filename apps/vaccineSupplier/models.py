@@ -1,22 +1,20 @@
 from django.db import models
 
 class FornecedorVacina(models.Model):
-    id = models.CharField('id', max_length=10)
     razao_social = models.CharField('razao_social', max_length=70)
     nome_fantasia = models.CharField('nome_fantasia', max_length=70)
     cnpj = models.CharField('CNPJ', max_length=13)
     nome_dono = models.CharField('nome_dono', max_length=30)    
 
     @staticmethod
-    def adicionar_fornecedor(fornecedores, id, razao_social, nome_fantasia, cnpj, nome_dono):
-        novo_fornecedor = FornecedorVacina(id, razao_social, nome_fantasia, cnpj, nome_dono)
+    def adicionar_fornecedor(fornecedores, razao_social, nome_fantasia, cnpj, nome_dono):
+        novo_fornecedor = FornecedorVacina(razao_social, nome_fantasia, cnpj, nome_dono)
         fornecedores.append(novo_fornecedor)
         print("Fornecedor adicionado com sucesso!")
 
     @staticmethod
     def listar_fornecedores(fornecedores):
         for fornecedor in fornecedores:
-            print(f"ID: {fornecedor._id}")
             print(f"Razão Social: {fornecedor._razao_social}")
             print(f"Nome Fantasia: {fornecedor._nome_fantasia}")
             print(f"CNPJ: {fornecedor._cnpj}")
@@ -27,7 +25,6 @@ class FornecedorVacina(models.Model):
     def buscar_fornecedor_por_cnpj(fornecedores, cnpj):
         for fornecedor in fornecedores:
             if fornecedor._cnpj == cnpj:
-                print(f"ID: {fornecedor._id}")
                 print(f"Razão Social: {fornecedor._razao_social}")
                 print(f"Nome Fantasia: {fornecedor._nome_fantasia}")
                 print(f"CNPJ: {fornecedor._cnpj}")

@@ -10,38 +10,38 @@ env
 
 ##### CLASSES #####
 # Vacinas
-/apps/vaccines/__pycache__/*
-/apps/vaccines/migrations/*
+apps/vaccines/__pycache__/*
+apps/vaccines/migrations/*
 
 # Campanhas
-/apps/campaings/__pycache__/*
-/apps/campaings/migrations/*
+apps/campaings/__pycache__/*
+apps/campaings/migrations/*
 
 # Paciente
-/apps/pacient/__pycache__/*
-/apps/pacient/migrations/*
+apps/pacient/__pycache__/*
+apps/pacient/migrations/*
 
 # LocalVacinação
-/apps/vacinationLocal/__pycache__/*
-/apps/vacinationLocal/migrations/*
+apps/vacinationLocal/__pycache__/*
+apps/vacinationLocal/migrations/*
 
 # FornecedorVacina
-/apps/vaccineSupplier/__pycache__/*
-/apps/vaccineSupplier/migrations/*
+apps/vaccineSupplier/__pycache__/*
+apps/vaccineSupplier/migrations/*
 
 # AgendamentoVacina
-/apps/vaccineScheduling/__pycache__/*
-/apps/vaccineScheduling/migrations/*
+apps/vaccineScheduling/__pycache__/*
+apps/vaccineScheduling/migrations/*
 
 # VacinaPaciente
-/apps/pacientVacines/__pycache__/*
-/apps/pacientVacines/migrations/*
+apps/pacientVacines/__pycache__/*
+apps/pacientVacines/migrations/*
 
 # Funcionario
-/apps/employee/__pycache__/*
-/apps/employee/migrations/*
+apps/employee/__pycache__/*
+apps/employee/migrations/*
 
 # EstoqueLocal
-/apps/localStorage/__pycache__/*
-/apps/localStorage/migrations/*
+apps/localStorage/__pycache__/*
+apps/localStorage/migrations/*
 ##### FIM CLASSES #####

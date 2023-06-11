@@ -3,7 +3,6 @@ from vaccineSupplier.models import FornecedorVacina
 from datetime import date
 
 class Vacina(models.Model):
-    id = models.CharField('id', max_length=20)
     nome_vacina = models.CharField('nome_vacina', max_length=50)
     tipo_vacina = models.CharField('tipo_vacina', max_length=30)
     doses_necessarias = models.CharField('doses_necessarias', max_length=10)
@@ -14,11 +13,11 @@ class Vacina(models.Model):
     fabricada_em = models.DateField ('fabricada_em', max_length=10)
     validade = models.DateField ('validade', max_length=10)   
     fornecedor = models.ForeignKey(FornecedorVacina, on_delete=models.CASCADE)     
-  
+
 class Meta:
         verbose_name = 'Vacina'
         verbose_name_plural = 'Vacinas'
         ordering =['id']
 
 def __str__(self):
-        return self.name
+        return f"{self.nome_vacina} - {self.tipo_vacina} - {self.doses_necessarias} - {self.forma_armazenamento} - {self.temperatura} - {self.validade} - {self.intervalo_entre_doses} - {self.numero_lote} - {self.fabricada_em} - {self.fornecedor}"

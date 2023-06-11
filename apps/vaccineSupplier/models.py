@@ -38,4 +38,4 @@ class FornecedorVacina(models.Model):
         ordering =['id']
 
     def __str__(self):
-        return self.name        
+        return f"{self.nome_fantasia} - {self.nome_fantasia} - {self.cnpj} - {self.nome_dono}" 

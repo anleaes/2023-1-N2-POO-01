@@ -58,4 +58,4 @@ class Meta:
         ordering =['id']
 
 def __str__(self):
-        return self.name
+        return f"{self.nome_vacina} - {self.tipo_vacina} - {self.doses_necessarias} - {self.forma_armazenamento} - {self.temperatura} - {self.validade} - {self.intervalo_entre_doses} - {self.numero_lote} - {self.fabricada_em} - {self.fornecedor}"

@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'vaccineScheduling.apps.VaccineschedulingConfig',
     'vaccineSupplier.apps.VaccinesupplierConfig',
     'vacinationLocal.apps.VacinationLocalConfig',
+    'localStorage.apps.LocalstorageConfig'
 ]
 
 MIDDLEWARE = [

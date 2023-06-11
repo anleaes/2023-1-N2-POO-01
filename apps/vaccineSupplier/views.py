@@ -1,3 +1,10 @@
 from django.shortcuts import render
 
-# Create your views here.
+from .models import FornecedorVacina
+
+from rest_framework import viewsets
+from .serializer import FornecedorVacinaSerializer
+
+class FornecedorVacinaViewSet(viewsets.ModelViewSet):
+    queryset = FornecedorVacina.objects.all()
+    serializer_class = FornecedorVacinaSerializer  

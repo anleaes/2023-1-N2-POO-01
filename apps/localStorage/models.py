@@ -1,4 +1,5 @@
 from django.db import models
+from vaccines.models import Vacina
 
 class localStorage(models.Model) :
     vaccine = models.ForeignKey(Vacina, on_delete=models.CASCADE)

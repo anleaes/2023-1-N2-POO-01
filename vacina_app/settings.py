@@ -47,12 +47,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'employee.apps.EmployeeConfig',
-    'pacientVacines.apps.PacientvacinesConfig',
-    'vaccines.apps.VaccinesConfig',
-    'vaccineScheduling.apps.VaccineschedulingConfig',
-    'vaccineSupplier.apps.VaccinesupplierConfig',
-    'vacinationLocal.apps.VacinationLocalConfig',
+    # 'employee.apps.EmployeeConfig',
+    # 'pacientVacines.apps.PacientvacinesConfig',
+    # 'vaccines.apps.VaccinesConfig',
+    # 'vaccineScheduling.apps.VaccineschedulingConfig',
+    # 'vaccineSupplier.apps.VaccinesupplierConfig',
+    # 'vacinationLocal.apps.VacinationLocalConfig',
     'localStorage.apps.LocalstorageConfig'
 ]
 

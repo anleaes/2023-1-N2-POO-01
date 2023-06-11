@@ -1,22 +1,20 @@
 from django.db import models
-from vaccineSupplier.models import FornecedorVacina
 
-class FornecedorVacina:
-     def __init__(self, id, razao_social, nome_fantasia, cnpj, nome_dono):
-       self._id = id
-       self._razao_social = razao_social
-       self._nome_fantasia = nome_fantasia
-       self._cnpj = cnpj
-       self._nome_dono = nome_dono       
+class FornecedorVacina(models.Model):
+    id = models.CharField('id', max_length=10)
+    razao_social = models.CharField('razao_social', max_length=70)
+    nome_fantasia = models.CharField('nome_fantasia', max_length=70)
+    cnpj = models.CharField('CNPJ', max_length=13)
+    nome_dono = models.CharField('nome_dono', max_length=30)    
 
-     @staticmethod
-     def adicionar_fornecedor(fornecedores, id, razao_social, nome_fantasia, cnpj, nome_dono):
+    @staticmethod
+    def adicionar_fornecedor(fornecedores, id, razao_social, nome_fantasia, cnpj, nome_dono):
         novo_fornecedor = FornecedorVacina(id, razao_social, nome_fantasia, cnpj, nome_dono)
         fornecedores.append(novo_fornecedor)
         print("Fornecedor adicionado com sucesso!")
 
-     @staticmethod
-     def listar_fornecedores(fornecedores):
+    @staticmethod
+    def listar_fornecedores(fornecedores):
         for fornecedor in fornecedores:
             print(f"ID: {fornecedor._id}")
             print(f"Razão Social: {fornecedor._razao_social}")
@@ -25,8 +23,8 @@ class FornecedorVacina:
             print(f"Nome do Dono: {fornecedor._nome_dono}")
             print()
             
-     @staticmethod
-     def buscar_fornecedor_por_cnpj(fornecedores, cnpj):
+    @staticmethod
+    def buscar_fornecedor_por_cnpj(fornecedores, cnpj):
         for fornecedor in fornecedores:
             if fornecedor._cnpj == cnpj:
                 print(f"ID: {fornecedor._id}")
@@ -36,13 +34,6 @@ class FornecedorVacina:
                 print(f"Nome do Dono: {fornecedor._nome_dono}")
                 return
         print("Fornecedor não encontrado.")
-
-class Product(models.Model):
-    id = models.StringField('id', max_length=20)
-    razao_social = models.CharField('razao_social', max_length=70)
-    nome_fantasia = models.CharField('nome_fantasia', max_length=70)
-    cnpj = models.StringField('CNPJ', max_length=13)
-    nome_dono = models.CharField('nome_dono', max_length=30)
 
     class Meta:
         verbose_name = 'FornecedorVacina'

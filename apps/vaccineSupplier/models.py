@@ -1,11 +1,10 @@
 from django.db import models
-from vaccineSupplier.models import FornecedorVacina
 
 class FornecedorVacina(models.Model):
-    id = models.StringField('id', max_length=20)
+    id = models.CharField('id', max_length=10)
     razao_social = models.CharField('razao_social', max_length=70)
     nome_fantasia = models.CharField('nome_fantasia', max_length=70)
-    cnpj = models.StringField('CNPJ', max_length=13)
+    cnpj = models.CharField('CNPJ', max_length=13)
     nome_dono = models.CharField('nome_dono', max_length=30)    
 
     @staticmethod

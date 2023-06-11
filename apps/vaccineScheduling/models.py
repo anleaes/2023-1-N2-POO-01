@@ -1,6 +1,6 @@
 from django.db import models
 
-class AgendamentoVacina:
+class vaccineScheduling:
     def __init__(self, id, data, paciente, funcionario, vacina):
         self.id = id
         self.data = data

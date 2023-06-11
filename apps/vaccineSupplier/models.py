@@ -1,7 +1,6 @@
 from django.db import models
 
 class FornecedorVacina(models.Model):
-    id = models.CharField('id', max_length=10)
     razao_social = models.CharField('razao_social', max_length=70)
     nome_fantasia = models.CharField('nome_fantasia', max_length=70)
     cnpj = models.CharField('CNPJ', max_length=13)
@@ -13,4 +12,4 @@ class FornecedorVacina(models.Model):
         ordering =['id']
 
     def __str__(self):
-        return self.name        
+        return f"{self.nome_fantasia} - {self.nome_fantasia} - {self.cnpj} - {self.nome_dono}" 

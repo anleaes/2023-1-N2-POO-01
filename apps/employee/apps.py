@@ -1,5 +1,6 @@
 from django.apps import AppConfig
 
-class VacinationLocalConfig(AppConfig)
+
+class EmployeeConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'Local Vacina'
+    name = 'employee'

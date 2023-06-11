@@ -3,6 +3,10 @@ vacina_app/__pycache__
 db.sqlite3
 .env
 env
+.metals
+.metals/*
+.vscode
+.vscode/*
 
 ##### CLASSES #####
 # Vacinas

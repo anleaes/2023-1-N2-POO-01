@@ -1,11 +1,12 @@
 from django.urls import include, path
+from . import views
 from rest_framework import routers
-from .views import VacinationLocalViewSet
+
+app_name = 'vacinationLocal'
 
 router = routers.DefaultRouter()
-router.register(r'VacinationLocal', VacinationLocalViewSet)
+router.register('local_vacinacao', views.VacinationLocalViewSet, basename='vacinationLocal')
 
 urlpatterns = [
-    # Outras rotas da sua aplicação
-    path('api/', include(router.urls)),
+    path('', include(router.urls)),
 ]

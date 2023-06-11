@@ -3,7 +3,6 @@ from vaccineSupplier.models import FornecedorVacina
 from datetime import date
 
 class Vacina(models.Model):
-    id = models.CharField('id', max_length=20)
     nome_vacina = models.CharField('nome_vacina', max_length=50)
     tipo_vacina = models.CharField('tipo_vacina', max_length=30)
     doses_necessarias = models.CharField('doses_necessarias', max_length=10)
@@ -15,15 +14,14 @@ class Vacina(models.Model):
     validade = models.DateField ('validade', max_length=10)   
     fornecedor = models.ForeignKey(FornecedorVacina, on_delete=models.CASCADE)     
         
-    def adicionar_vacina(vacinas, id, nome_vacina, tipo_vacina,doses_necessarias, forma_armazenamento, temperatura, intervalo_entre_doses, numero_lote, fabricada_em, validade, fornecedor):
-        nova_vacina = Vacina(id, nome_vacina, tipo_vacina, doses_necessarias, forma_armazenamento, temperatura, intervalo_entre_doses, numero_lote, fabricada_em, validade, fornecedor)
+    def adicionar_vacina(vacinas, nome_vacina, tipo_vacina,doses_necessarias, forma_armazenamento, temperatura, intervalo_entre_doses, numero_lote, fabricada_em, validade, fornecedor):
+        nova_vacina = Vacina(nome_vacina, tipo_vacina, doses_necessarias, forma_armazenamento, temperatura, intervalo_entre_doses, numero_lote, fabricada_em, validade, fornecedor)
         vacinas.append(nova_vacina)
         print("Vacina adicionada com sucesso!")
 
     @staticmethod
     def listar_vacinas(vacinas):
           for vacina in vacinas:
-            print(f"ID: {vacina._id}")
             print(f"Nome: {vacina._nome_vacina}")
             print(f"Tipo: {vacina._tipo_vacina}")
             print(f"Doses Necessárias: {vacina._doses_necessarias}")
@@ -50,7 +48,6 @@ class Vacina(models.Model):
         else:
           print("Vacinas vencidas:")
           for vacina in vacinas_vencidas:
-            print(f"ID: {vacina._id}")
             print(f"Nome: {vacina._nome_vacina}")
             print(f"Validade: {vacina._validade}")
             print()     

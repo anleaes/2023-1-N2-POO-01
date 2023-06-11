@@ -2,10 +2,10 @@ from django.urls import path, include
 from . import views
 from rest_framework import routers
 
-app_name = 'localStorage'
+app_name = 'employee'
 
 router = routers.DefaultRouter()
-router.register('estoque_local', views.localStorageViewSet, basename='localStorage')
+router.register('funcionarios', views.EmployeeViewSet, basename='funcionarios')
 
 urlpatterns = [
     path('', include(router.urls) )

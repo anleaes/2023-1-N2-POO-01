@@ -3,7 +3,7 @@ from django.db import models
 class localStorage(models.Model) :
     vaccine = models.ForeignKey(Vacina, on_delete=models.CASCADE)
     quantity = models.IntegerField("Quantidade", verbose_name="Quantidade",  default=0)
-    created_at = models.DateTimeField(verbose_name="Criado em", auto_now_add=True)
+    created_at = models.DateTimeField("Criado em", verbose_name="Criado em", auto_now_add=True)
 
 
     class Meta: 

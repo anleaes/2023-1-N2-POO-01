@@ -1,8 +1,8 @@
 from django.shortcuts import render
-from .models import pacient
+from .models import PacientVaccines
 from rest_framework import viewsets
 from .serializer import pacientVacinesSerializer
 
 class PacientViewSet(viewsets.ModelViewSet):
-    queryset = pacient.objects.all()
+    queryset = PacientVaccines.objects.all()
     serializer_class = pacientVacinesSerializer

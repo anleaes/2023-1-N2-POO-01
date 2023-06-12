@@ -28,7 +28,6 @@ sys.path.insert(0, APPS_DIR)
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-g)^il6!vqm7j1c0y58&#3rwcu@5cp_@hl)f1t1iu#p++d^0**7'
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -48,6 +47,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'employee.apps.EmployeeConfig',
+    'pacient.apps.PacientConfig',
+    'campaings.apps.CampaingsConfig',
     'pacientVacines.apps.PacientvacinesConfig',
     'vaccines.apps.VaccinesConfig',
     'vaccineScheduling.apps.VaccineschedulingConfig',

@@ -2,7 +2,7 @@ from django.db import models
 from vaccines.models import Vacina
 
 class localStorage(models.Model) :
-    vaccine = models.ForeignKey(Vacina, on_delete=models.CASCADE)
+    vaccine = models.ForeignKey(Vacina, related_name="vacina", on_delete=models.CASCADE)
     quantity = models.IntegerField("Quantidade",  default=0)
     created_at = models.DateTimeField("Criado em", auto_now_add=True)
 

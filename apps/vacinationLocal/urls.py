@@ -5,7 +5,7 @@ from rest_framework import routers
 app_name = 'vacinationLocal'
 
 router = routers.DefaultRouter()
-router.register('local_vacinacao', views.VacinationLocalViewSet, basename='vacinationLocal')
+router.register('todos', views.VacinationLocalViewSet, basename='Locais de vacinação')
 
 urlpatterns = [
     path('', include(router.urls)),

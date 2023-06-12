@@ -1,4 +1,3 @@
-from typing import Self
 from django.db import models
 from vaccines.models import Vacina
 

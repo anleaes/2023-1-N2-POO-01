@@ -5,7 +5,7 @@ from rest_framework import routers
 app_name = 'pacientVacines'
 
 router = routers.DefaultRouter()
-router.register('listar', views.PacientViewSet, basename='PacientVaccines')
+router.register('todas', views.PacientViewSet, basename='Vacinas dos pacientes')
 
 urlpatterns = [
 

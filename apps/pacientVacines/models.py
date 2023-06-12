@@ -1,12 +1,19 @@
 from django.db import models
+from employee.models import Employee
+from vacinationLocal.models import VacinationLocal
+from pacient.models import Pacient
 
-class pacientVacines:
-    def __init__(self, id, aplicada_em, dose, funcionario, paciente):
-        self.id = id
-        self.aplicada_em = aplicada_em
-        self.dose = dose
-        self.funcionario = funcionario
-        self.paciente = paciente
+class PacientVaccines(models.Model):
+    applied_in = models.DateTimeField("Aplicada em", null=False)
+    vaccine_dose = models.IntegerField("Dose da vacina", default=1)
+    employee = models.ForeignKey(Employee, on_delete=models.CASCADE)
+    pacient = models.ForeignKey(Pacient, on_delete=models.CASCADE, default=0)
+    vaccination_local = models.ForeignKey(VacinationLocal, on_delete=models.CASCADE)
 
-def __str__(self):
-        return self.paciente
+
+    class Meta:
+        verbose_name = "Vacinas do paciente"
+        ordering = ["id"]
+
+    def __str__(self):
+        return f"{self.pacient} - {self.vaccine_dose} - {self.employee} - {self.vaccination_local} - {self.applied_in}"

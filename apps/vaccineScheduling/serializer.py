@@ -1,10 +1,8 @@
 from django.shortcuts import render
 from rest_framework import serializers
-from .models import vaccinescheduling
+from .models import vaccineScheduling
 
 class vaccineschedulingSerializer(serializers.ModelSerializer):
-    local = vacinationLocalSerializer()
-
     class Meta:
-        model = vaccinescheduling
-        fields = ('id', 'data', 'funcionario', 'vacina', 'paciente')
+        model = vaccineScheduling
+        fields = '__all__'

@@ -8,9 +8,8 @@ urlpatterns = [
     path('local_vacinacao/', include('vacinationLocal.urls', namespace='vacinationLocal')),
     path('fornecedores/', include('vaccineSupplier.urls', namespace='vaccineSupplier')),
     path('vacinas/', include('vaccines.urls', namespace='vaccines')),
-
-    # path('vacinas_paciente', include('pacientVacines'), namespace='pacientVacines'),
-    # path('campanhas', include('campaings.urls', namespace='campaings')),
-    # path('pacientes', include('pacient.urls', namespace='pacients')),
-    # path('agendamentos_vacinacao', include('vaccineSchedule.urls', namespace='vaccineSchedule')),
+    path('campanhas/', include('campaings.urls', namespace='campaings')),
+    path('vacinas_paciente/', include('pacientVacines.url', namespace='pacientVacines')),
+    path('pacientes/', include('pacient.urls', namespace='pacients')),
+    path('agendamentos_vacinacao/', include('vaccineScheduling.url', namespace='vaccineScheduling')),
 ]

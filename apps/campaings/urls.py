@@ -5,7 +5,7 @@ from rest_framework import routers
 app_name = 'campaings'
 
 router = routers.DefaultRouter()
-router.register('campaings', views.CategoryViewSet, basename='campaings')
+router.register('todas', views.campaignViewSet, basename='campaings')
 
 urlpatterns = [
     path('', include(router.urls) )

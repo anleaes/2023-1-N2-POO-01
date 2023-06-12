@@ -1,11 +1,11 @@
 from django.urls import path, include
-from .views import vaccineschedulingViewSet
+from . import views
 from rest_framework import routers
 
-app_name = 'vaccinescheduling'
+app_name = 'vaccinesScheduling'
 
 router = routers.DefaultRouter()
-router.register('vaccinescheduling', views.vaccineschedulingViewSet, basename='vaccinescheduling')
+router.register('listar', views.vaccineschedulingViewSet, basename='vaccinescheduling')
 
 urlpatterns = [
 

@@ -20,4 +20,4 @@ class vaccineScheduling(models.Model):
 
     
     def __str__(self):
-        return f"{self.scheduling_date} - {self.pacient} - {self.employee} - {self.vaccine} - {self.vacination_local} - {self.created_at}"
+        return f"{self.scheduling_date} - {self.pacient} - {self.vaccine} - {self.vacination_local}"

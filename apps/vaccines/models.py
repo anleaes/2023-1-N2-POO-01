@@ -12,12 +12,13 @@ class Vacina(models.Model):
     numero_lote = models.CharField('numero_lote', max_length=50)     
     fabricada_em = models.DateField ('fabricada_em', max_length=10)
     validade = models.DateField ('validade', max_length=10)   
-    fornecedor = models.ForeignKey(FornecedorVacina, on_delete=models.CASCADE)     
+    fornecedor = models.ForeignKey(FornecedorVacina, on_delete=models.CASCADE)
 
-class Meta:
+    class Meta:
         verbose_name = 'Vacina'
         verbose_name_plural = 'Vacinas'
         ordering =['id']
-
-def __str__(self):
-        return f"{self.nome_vacina} - {self.tipo_vacina} - {self.doses_necessarias} - {self.forma_armazenamento} - {self.temperatura} - {self.validade} - {self.intervalo_entre_doses} - {self.numero_lote} - {self.fabricada_em} - {self.fornecedor}"
+        
+    def __str__(self):
+        return f"{self.nome_vacina} - {self.fornecedor}"
+        

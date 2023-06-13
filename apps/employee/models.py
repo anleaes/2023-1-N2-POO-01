@@ -16,4 +16,4 @@ class Employee(models.Model):
         ordering = ['id']
 
     def __str__(self):
-        return f"{self.code} - {self.full_name} - {self.age} - {self.function} - {self.formation} - {self.vacination_local}"
+        return f"{self.code} - {self.full_name} - {self.age} - {self.function} - {self.vacination_local}"

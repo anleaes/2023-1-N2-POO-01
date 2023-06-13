@@ -15,5 +15,5 @@ class VacinationLocal(models.Model):
         ordering = ["id"]
 
     def __str__(self):
-        return f"{self.local_name} - {self.street} - {self.neighborhood} - {self.cep} - {self.number} - {self.complement} - {self.reference}"
+        return f"{self.local_name} - {self.street} - {self.cep} - {self.number}"
     

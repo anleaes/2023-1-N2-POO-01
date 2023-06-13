@@ -20,4 +20,4 @@ class Pacient(models.Model):
         ordering =['id']
 
     def __str__(self):
-        return f"{self.document} - {self.pacient_name} - {self.age} - {self.gender} - {self.phone} - {self.street} - {self.neighborhood} - {self.postal_code} - {self.number} - {self.complemento} - {self.reference}"
+        return f"{self.document} - {self.pacient_name} - {self.age} - {self.gender} - {self.phone}"
